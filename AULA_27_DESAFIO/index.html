@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="form">
+
+            <h3>Cadastro de pessoa física</h3>
+
+            
+                <label>Nome</label>
+                <input type="text" id="i_nome" placeholder="Digite seu primeiro nome" required>
+
+                <label>Sobrenome</label>
+                <input type="text" id="i_sobrenome" placeholder="Digite seu sobrenome" required>
+
+                <label>E-mail</label>
+                <input type="text" id="i_email" placeholder="Digite seu e-mail" required>
+
+                <label>CEP</label>
+                <input type="text" id="i_cep" onblur="pesquisa_cep(this.value)" placeholder="00000-000" required>
+
+                <label>Rua</label>
+                <input type="text" id="i_rua" placeholder="Digite uma rua" required>
+
+                <label>Bairro</label>
+                <input type="text" id="i_bairro" placeholder="Digite um bairro" required>
+
+                <label>Cidade</label>
+                <input type="text" id="i_cidade" placeholder="Digite uma cidade" required>
+
+                <label>Estado</label>
+                <input type="text" id="i_estado" placeholder="Digite um estado" required>
+
+                <input type="submit" onclick="validacao()" value="Cadastrar" id="btt">
+                
+        </div>
+
+        <script src="js/jquery-3.7.0.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/mascara.js"></script>
+        <script src="js/password.js"></script>
+        <script src="js/viacep.js"></script>
+        <script src="js/validacao.js"></script>
+        
+    </body>
+</html>

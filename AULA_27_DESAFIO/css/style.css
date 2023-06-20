@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-image: url('../imagens/praia.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    margin: auto;
+    background-color: #e2f3ea93;
+    width: max-content;
+    padding: 10px 30px 20px 30px;
+}
+
+.form h3{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.form input:not(#btt){
+    display: block;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 33px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+#btt{
+    margin-top: 10px;
+    cursor: pointer;
+    width: 302px;
+    height: 40px;
+    background-color: #119400;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+#btt:hover{
+    background-color: #0aeb6f;
+    transition: 0.5s;
+}
